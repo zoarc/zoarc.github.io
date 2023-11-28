@@ -377,7 +377,7 @@
 		var outputPanel = document.getElementById('output-panel');
 		outputPanel.style.borderColor = 'forestgreen';
 		outputPanel.style.borderWidth = '5px';
-		outputPanel.style.borderStyle = 'double';
+		outputPanel.style.borderStyle = 'solid';
 		outputPanel.style.boxShadow = '0 0 8px 8px rgba(34, 139, 34, 0.4)';
 	}
 
@@ -421,7 +421,19 @@
 
 		var copyButton = document.getElementById('copy-output-button');
 		copyButton.classList.remove('generated');
-
+		
+		var surveyReasonSection = document.getElementById('surveyReasonSection');
+		surveyReasonSection.style.display = 'none';
+		
+		var resolutionDetailsSection = document.getElementById('resolutionDetailsSection');
+		resolutionDetailsSection.style.display = 'none';
+		
+		var languageLineSection = document.querySelector('.language-line-section');
+		languageLineSection.style.display = 'none';
+		
+		var ticketSection = document.querySelector('.ticket-section');
+		ticketSection.style.display = 'none';
+		
 		var outputPanel = document.getElementById('output-panel');
 		outputPanel.style.borderColor = 'mediumslateblue';
 		outputPanel.style.borderWidth = '3px'
